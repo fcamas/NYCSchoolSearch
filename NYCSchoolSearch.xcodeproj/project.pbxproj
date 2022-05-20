@@ -14,6 +14,8 @@
 		1CA49A442835E1DC00A74ACC /* NYCSchoolSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA49A432835E1DC00A74ACC /* NYCSchoolSearchTests.swift */; };
 		1CA49A4E2835E1DC00A74ACC /* NYCSchoolSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA49A4D2835E1DC00A74ACC /* NYCSchoolSearchUITests.swift */; };
 		1CA49A502835E1DC00A74ACC /* NYCSchoolSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA49A4F2835E1DC00A74ACC /* NYCSchoolSearchUITestsLaunchTests.swift */; };
+		1CA49A602835EA2800A74ACC /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA49A5F2835EA2800A74ACC /* SchoolModel.swift */; };
+		1CA49A622835EA5000A74ACC /* SchoolNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA49A612835EA5000A74ACC /* SchoolNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1CA49A492835E1DC00A74ACC /* NYCSchoolSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCSchoolSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA49A4D2835E1DC00A74ACC /* NYCSchoolSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolSearchUITests.swift; sourceTree = "<group>"; };
 		1CA49A4F2835E1DC00A74ACC /* NYCSchoolSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CA49A5F2835EA2800A74ACC /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		1CA49A612835EA5000A74ACC /* SchoolNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,9 @@
 		1CA49A312835E1DB00A74ACC /* NYCSchoolSearch */ = {
 			isa = PBXGroup;
 			children = (
+				1CA49A5E2835EA1B00A74ACC /* ViewModels */,
+				1CA49A5D2835EA1500A74ACC /* Views */,
+				1CA49A5C2835EA0C00A74ACC /* Models */,
 				1CA49A322835E1DB00A74ACC /* NYCSchoolSearchApp.swift */,
 				1CA49A342835E1DB00A74ACC /* ContentView.swift */,
 				1CA49A362835E1DC00A74ACC /* Assets.xcassets */,
@@ -125,6 +132,29 @@
 				1CA49A4F2835E1DC00A74ACC /* NYCSchoolSearchUITestsLaunchTests.swift */,
 			);
 			path = NYCSchoolSearchUITests;
+			sourceTree = "<group>";
+		};
+		1CA49A5C2835EA0C00A74ACC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CA49A5F2835EA2800A74ACC /* SchoolModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CA49A5D2835EA1500A74ACC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1CA49A5E2835EA1B00A74ACC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1CA49A612835EA5000A74ACC /* SchoolNetwork.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA49A622835EA5000A74ACC /* SchoolNetwork.swift in Sources */,
 				1CA49A352835E1DB00A74ACC /* ContentView.swift in Sources */,
+				1CA49A602835EA2800A74ACC /* SchoolModel.swift in Sources */,
 				1CA49A332835E1DB00A74ACC /* NYCSchoolSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
